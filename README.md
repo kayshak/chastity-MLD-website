@@ -30,19 +30,29 @@ python3 -m http.server 8000
 - **Headings:** Playfair Display (serif), with Georgia fallback.
 - **Body:** Helvetica Neue / Arial system sans-serif.
 
+## Positioning
+
+The build is **MLD-forward**: Manual Lymphatic Drainage and restorative wellness are
+the headline, with the Registered Nurse credential kept as the clinical authority
+behind the work. The five core focus areas are **MLD, wellness, nervous system
+calming, pre/post-op recovery, and pre/post aesthetic surgery recovery**.
+
+Dedicated *concierge nursing* services are intentionally deferred to a later phase
+(intake/scheduling via IntakeQ); the "Concierge Nursing" wordmark is retained in the
+logo, and a Phase-2 note flags the add-on on the Services page.
+
 ## Pages
 
-| File               | Page                       | Notes                                            |
-| ------------------ | -------------------------- | ------------------------------------------------ |
-| `index.html`       | Homepage                   | Hero, RN authority block, services overview      |
-| `about.html`       | About                      | `#meet` (Meet the RN) + `#mld` (What is MLD?)    |
-| `general-care.html`| General Concierge Nursing  | Baseline services overview                       |
-| `pre-post-op.html` | Pre & Post-Op Recovery     | Educational timeline — **no purchasable packages** (Phase 1) |
-| `for-surgeons.html`| For Surgeons               | Referral value; Phase 2 portal placeholder       |
-| `contact.html`     | Contact                    | Simple Name / Email / Message form               |
+| File               | Page         | Notes                                                            |
+| ------------------ | ------------ | ---------------------------------------------------------------- |
+| `index.html`       | Homepage     | MLD-forward hero, RN authority block, 4-pillar services overview |
+| `about.html`       | About        | `#meet` (Meet the RN) + `#mld` (What is MLD?)                    |
+| `services.html`    | Services hub | Single page with anchored sections: `#mld`, `#calming`, `#recovery`, `#aesthetic`. Educational — **no purchasable packages** (Phase 1) |
+| `for-surgeons.html`| For Surgeons | Referral value; Phase 2 portal placeholder                       |
+| `contact.html`     | Contact      | Simple Name / Email / Message form                               |
 
 Navigation (minimal header with dropdowns):
-**About** ▾ · **Concierge Services** ▾ · **For Surgeons** · **Contact**,
+**About** ▾ · **Services** ▾ · **For Surgeons** · **Contact**,
 with social icons and a **Book Consultation** button on the right.
 
 ## File Structure
@@ -51,8 +61,7 @@ with social icons and a **Book Consultation** button on the right.
 .
 ├── index.html
 ├── about.html
-├── general-care.html
-├── pre-post-op.html
+├── services.html
 ├── for-surgeons.html
 ├── contact.html
 ├── css/styles.css
@@ -75,6 +84,8 @@ Several intentional placeholders are wired in and marked with developer comments
   and a real form handler.
 - **For Surgeons** — Phase 2 secure physician portal (login, referral forms,
   downloadable post-op protocol PDFs).
+- **Concierge nursing add-on** — Phase 2 service line; noted on the Services page,
+  with intake/scheduling planned through IntakeQ.
 
 All placeholder copy is professional, empathetic, and clinically careful — and
 clearly framed as educational rather than medical advice.
