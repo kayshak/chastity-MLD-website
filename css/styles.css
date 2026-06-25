@@ -880,6 +880,18 @@ p {
     display: flex;
   }
 
+  /* Tighten the header so the brand, toggle, and CTA fit one row */
+  .nav {
+    gap: var(--space-sm);
+  }
+
+  .nav-actions .btn {
+    padding: 0.7em 1.15em;
+    font-size: 0.7rem;
+    letter-spacing: 0.06em;
+    white-space: nowrap;
+  }
+
   .nav-menu {
     position: fixed;
     inset: 76px 0 auto 0;
@@ -933,7 +945,11 @@ p {
   }
 
   .nav-menu > li:hover .dropdown {
-    /* disable hover-open on touch */
+    /* On touch, :hover can fire — keep the desktop centering transform from
+       leaking through (it has higher specificity than .dropdown.is-open). */
+    position: static;
+    left: auto;
+    transform: none;
     opacity: 1;
     visibility: visible;
   }
@@ -944,6 +960,20 @@ p {
 }
 
 @media (max-width: 560px) {
+  .nav {
+    gap: 0.5rem;
+  }
+
+  .brand {
+    font-size: 1rem;
+  }
+
+  .nav-actions .btn {
+    padding: 0.6em 0.7em;
+    font-size: 0.6rem;
+    letter-spacing: 0.03em;
+  }
+
   .grid--2,
   .grid--3,
   .stats {
