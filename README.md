@@ -75,8 +75,9 @@ with social icons and a **Book Consultation** button on the right.
 
 Several intentional placeholders are wired in and marked with developer comments:
 
-- **Book Consultation** buttons (`data-noterro-placeholder`) — link to `#`,
-  ready to point at the Noterro booking flow.
+- **Booking** buttons (`data-noterro-booking`) — live, linking to the client's
+  Noterro booking portal (`https://chastitybirdsongllc.noterro.com/`), opening
+  in a new tab.
 - **Social icons** — placeholder `href="#"`; swap in real profile URLs.
 - **Imagery** — soft gradient `img-placeholder` blocks; replace with final photos
   (add files to `assets/`).
