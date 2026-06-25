@@ -933,7 +933,11 @@ p {
   }
 
   .nav-menu > li:hover .dropdown {
-    /* disable hover-open on touch */
+    /* On touch, :hover can fire — keep the desktop centering transform from
+       leaking through (it has higher specificity than .dropdown.is-open). */
+    position: static;
+    left: auto;
+    transform: none;
     opacity: 1;
     visibility: visible;
   }
