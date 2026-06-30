@@ -74,20 +74,4 @@
   if (yearEl) {
     yearEl.textContent = String(new Date().getFullYear());
   }
-
-  /* ---- Contact form (Phase 1 placeholder, no backend) ---- */
-  var form = document.querySelector("[data-contact-form]");
-  if (form) {
-    form.addEventListener("submit", function (e) {
-      e.preventDefault();
-      var status = form.querySelector("[data-form-status]");
-      if (status) {
-        status.hidden = false;
-        status.textContent =
-          "Thank you for reaching out. This is a Phase 1 placeholder form — " +
-          "no message has been transmitted. Please connect a form handler before launch.";
-      }
-      form.reset();
-    });
-  }
 })();

@@ -43,8 +43,12 @@
       </ul>
       <div class="nav-actions">
         <div class="social" aria-label="Social media">
+          <!-- Instagram & LinkedIn hidden for now until social accounts are live -->
+          <!--
           <a href="#" aria-label="Instagram" title="Instagram (placeholder)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
           <a href="#" aria-label="LinkedIn" title="LinkedIn (placeholder)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="3"/><line x1="7" y1="10" x2="7" y2="17"/><circle cx="7" cy="6.8" r="0.6" fill="currentColor" stroke="none"/><path d="M11 17v-3.5a2.5 2.5 0 0 1 5 0V17"/><line x1="11" y1="10" x2="11" y2="17"/></svg></a>
+          -->
+          <a href="mailto:mld@chastitybirdsongllc.com" aria-label="Email" title="Email Chastity"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></a>
         </div>
         <a class="btn btn--primary" href="https://chastitybirdsongllc.noterro.com/" target="_blank" rel="noopener" data-noterro-booking>Booking</a>
       </div>
@@ -67,37 +71,30 @@
         <h2 id="form-title" class="center">Send a message</h2>
 
         <!--
-          Phase 1: minimal contact form (Name, Email, Message).
+          Phase 1: contact is a direct mailto link to mld@chastitybirdsongllc.com.
           PHASE 2 — DEVELOPER NOTE:
-          Expand this form with pre-qualifying fields:
+          Replace this with a full contact form including pre-qualifying fields:
             - Expected Surgery Date (date)
             - Procedure Type (select)
             - Referring Surgeon (text)
-          Also wire submission to a form handler / Noterro before launch.
-          The current submit handler in js/main.js is a no-op placeholder.
+          Wire submission to a form handler / Noterro before launch.
         -->
-        <form class="form" data-contact-form novalidate>
-          <div class="field">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" autocomplete="name" required />
-          </div>
-          <div class="field">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" autocomplete="email" required />
-          </div>
-          <div class="field">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required></textarea>
-          </div>
-          <div class="center">
-            <button type="submit" class="btn btn--primary">Send Message</button>
-            <p class="form-note" style="margin-top: var(--space-sm);">
-              Prefer to book directly? Head to
-              <a href="https://chastitybirdsongllc.noterro.com/" target="_blank" rel="noopener" data-noterro-booking>Booking</a>.
-            </p>
-          </div>
-          <p class="note" data-form-status role="status" hidden></p>
-        </form>
+        <div class="center measure" style="margin-inline: auto;">
+          <p class="lead">
+            Email Chastity directly and she'll respond personally.
+          </p>
+          <p class="center" style="margin-top: var(--space-md);">
+            <a class="btn btn--primary" href="mailto:mld@chastitybirdsongllc.com">Email Chastity</a>
+          </p>
+          <p class="form-note" style="margin-top: var(--space-sm);">
+            Or reach out at
+            <a href="mailto:mld@chastitybirdsongllc.com">mld@chastitybirdsongllc.com</a>.
+          </p>
+          <p class="form-note" style="margin-top: var(--space-sm);">
+            Prefer to book directly? Head to
+            <a href="https://chastitybirdsongllc.noterro.com/" target="_blank" rel="noopener" data-noterro-booking>Booking</a>.
+          </p>
+        </div>
       </div>
     </section>
   </main>
