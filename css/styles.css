@@ -1126,13 +1126,12 @@ p {
   height: 19px;
 }
 
-/* About — Chastity portrait (real photo, portrait-oriented frame) */
+/* About — Chastity portrait (real photo, using the image's own dimensions) */
 .portrait {
   margin: 0;
   width: 100%;
-  max-width: 440px;
+  max-width: 420px;
   justify-self: center;
-  aspect-ratio: 3 / 4;
   border-radius: var(--radius);
   overflow: hidden;
   border: 1px solid rgba(144, 143, 135, 0.25);
@@ -1142,7 +1141,22 @@ p {
 .portrait img {
   display: block;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: 50% 18%;
+  height: auto;
+}
+
+/* Homepage hero — Chastity portrait fills the media panel at its natural ratio */
+.hero__media img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hero__media:has(img) {
+  aspect-ratio: auto;
+  max-height: none;
+  background: none;
+}
+
+.hero__media:has(img)::before {
+  content: none;
 }
