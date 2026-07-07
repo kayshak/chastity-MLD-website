@@ -78,9 +78,10 @@ Several intentional placeholders are wired in and marked with developer comments
 - **Booking** buttons (`data-noterro-booking`) — live, linking to the client's
   Noterro booking portal (`https://chastitybirdsongllc.noterro.com/`), opening
   in a new tab.
-- **Facebook icon** — nav + footer icons carry `data-facebook` with a placeholder
-  `href="#"`. Swap in the real Facebook page URL, and add that same URL to the
-  `sameAs` array in each page's JSON-LD (`<script type="application/ld+json">`).
+- **Facebook icon** — nav + footer icons (`data-facebook`) link to the live
+  Facebook page, which is also listed in the `sameAs` array of each page's JSON-LD.
+- **About portrait** — `assets/chastity-portrait.jpg` is wired into the About
+  `#meet` section (`.portrait` figure) and the `Person` JSON-LD `image`.
 - **Business street address** — the `LocalBusiness`/`MedicalBusiness` JSON-LD includes
   city/region/country (Parker, CO, US) but no `streetAddress`/`postalCode` yet, and
   `geo` uses Parker's town-center coordinates. Add the exact address + lat/long when
