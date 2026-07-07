@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Chastity Birdsong Concierge Nursing">
+  <rect width="64" height="64" rx="14" fill="#2F4F4F"/>
+  <!-- Lymphatic droplet motif -->
+  <path d="M32 13c0 0 13 15.5 13 24.2A13 13 0 0 1 32 50a13 13 0 0 1-13-12.8C19 28.5 32 13 32 13z" fill="#E0F2F1"/>
+  <path d="M32 22c0 0 6.5 8 6.5 12.4A6.5 6.5 0 0 1 32 41" fill="none" stroke="#708090" stroke-width="2.2" stroke-linecap="round" opacity="0.55"/>
+</svg>
