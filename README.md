@@ -78,7 +78,13 @@ Several intentional placeholders are wired in and marked with developer comments
 - **Booking** buttons (`data-noterro-booking`) — live, linking to the client's
   Noterro booking portal (`https://chastitybirdsongllc.noterro.com/`), opening
   in a new tab.
-- **Social icons** — placeholder `href="#"`; swap in real profile URLs.
+- **Facebook icon** — nav + footer icons carry `data-facebook` with a placeholder
+  `href="#"`. Swap in the real Facebook page URL, and add that same URL to the
+  `sameAs` array in each page's JSON-LD (`<script type="application/ld+json">`).
+- **Business street address** — the `LocalBusiness`/`MedicalBusiness` JSON-LD includes
+  city/region/country (Parker, CO, US) but no `streetAddress`/`postalCode` yet, and
+  `geo` uses Parker's town-center coordinates. Add the exact address + lat/long when
+  available for the strongest local-SEO / Google Business Profile match.
 - **Imagery** — soft gradient `img-placeholder` blocks; replace with final photos
   (add files to `assets/`).
 - **Meet the RN bio** — placeholder copy to be finalized from Chastity's source PDF.
@@ -92,3 +98,26 @@ Several intentional placeholders are wired in and marked with developer comments
 
 All placeholder copy is professional, empathetic, and clinically careful — and
 clearly framed as educational rather than medical advice.
+
+## SEO & Local SEO
+
+Every page carries a full search/social metadata layer:
+
+- **Canonical URLs**, `author`, and `robots` (`index, follow, max-image-preview:large`).
+- **Open Graph + Twitter cards** with a branded 1200×630 share image
+  (`assets/og-image.png`), so link previews render on Facebook, iMessage, LinkedIn, etc.
+- **Local SEO signals** — `geo.*` / `ICBM` meta and a `LocalBusiness` /
+  `MedicalBusiness` JSON-LD entity (`#business`) with NAP (name, phone, email),
+  Parker CO address, `areaServed`, `founder`, `knowsAbout`, and a service catalog.
+- **Structured data** per page — `WebSite` (home), `Person` (about),
+  `FAQPage` (faq, generated from the on-page Q&As), and `BreadcrumbList` on subpages.
+- **Footer NAP block** on every page for consistent name/phone/address citations.
+- **`robots.txt`** and **`sitemap.xml`** at the site root (update `sitemap.xml`
+  `lastmod` dates when content changes).
+- **Favicon + PWA** — `assets/favicon.svg`, PNG app icons, `apple-touch-icon.png`,
+  `site.webmanifest`, and `theme-color`.
+
+Brand icons/images are generated from HTML via Chromium; the source generator
+lives outside the repo (not required at runtime — the built assets are committed).
+When the production domain differs from `https://chastitybirdsongllc.com`,
+find-and-replace it across the HTML `<head>`s, `sitemap.xml`, and `robots.txt`.
