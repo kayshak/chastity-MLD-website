@@ -800,6 +800,63 @@ p {
   color: var(--color-taupe);
 }
 
+/* ------------------------- Contact detail panel ------------------------ */
+.contact-detail__cta {
+  margin-top: var(--space-md);
+}
+
+.brand-panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1 / 1;
+  padding: clamp(2rem, 6vw, 4rem);
+  border-radius: var(--radius);
+  border: 1px solid rgba(144, 143, 135, 0.25);
+  background: radial-gradient(
+      100% 100% at 30% 0%,
+      rgba(255, 255, 255, 0.8),
+      rgba(224, 242, 241, 0)
+    ),
+    linear-gradient(160deg, #f4faf9 0%, #dcecea 100%);
+  box-shadow: 0 30px 60px -45px rgba(47, 79, 79, 0.5);
+}
+
+.brand-panel img {
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+}
+
+.contact-methods {
+  list-style: none;
+  margin-top: var(--space-lg);
+  border-top: 1px solid rgba(144, 143, 135, 0.25);
+}
+
+.contact-methods li {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1.2rem;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid rgba(144, 143, 135, 0.25);
+}
+
+.contact-methods li > span {
+  flex: none;
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-slate);
+}
+
+.contact-methods li > a {
+  text-align: right;
+  word-break: break-word;
+}
+
 /* ----------------------------- Footer ---------------------------------- */
 .site-footer {
   background: var(--color-dark-slate);

@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/styles.css?v=4" />
+  <link rel="stylesheet" href="css/styles.css?v=6" />
   <link rel="canonical" href="https://chastitybirdsongllc.com/contact.html" />
   <meta name="author" content="Chastity Birdsong, RN" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
@@ -266,9 +266,7 @@
     </section>
 
     <section class="section" aria-labelledby="form-title">
-      <div class="container">
-        <h2 id="form-title" class="center">Send a message</h2>
-
+      <div class="container split">
         <!--
           Phase 1: contact is a direct mailto link to mld@chastitybirdsongllc.com.
           PHASE 2 — DEVELOPER NOTE:
@@ -278,25 +276,32 @@
             - Referring Surgeon (text)
           Wire submission to a form handler / Noterro before launch.
         -->
-        <div class="center measure" style="margin-inline: auto;">
+        <div class="contact-detail">
+          <span class="eyebrow">Send a message</span>
+          <h2 id="form-title">Email Chastity directly.</h2>
           <p class="lead">
-            Email Chastity directly and she'll respond personally.
+            Have a question or ready to begin? Send a note and Chastity will
+            respond personally.
           </p>
-          <p class="center" style="margin-top: var(--space-md);">
-            <a class="btn btn--primary" href="mailto:mld@chastitybirdsongllc.com">Email Chastity</a>
-          </p>
-          <p class="form-note" style="margin-top: var(--space-sm);">
-            Or reach out at
-            <a href="mailto:mld@chastitybirdsongllc.com">mld@chastitybirdsongllc.com</a>.
-          </p>
-          <p class="form-note" style="margin-top: var(--space-sm);">
-            Prefer to call or text? Reach Chastity at
-            <a href="tel:+17203061779">720-306-1779</a>.
-          </p>
-          <p class="form-note" style="margin-top: var(--space-sm);">
-            Prefer to book directly? Head to
-            <a href="https://chastitybirdsongllc.noterro.com/" target="_blank" rel="noopener" data-noterro-booking>Booking</a>.
-          </p>
+          <a class="btn btn--primary contact-detail__cta" href="mailto:mld@chastitybirdsongllc.com">Email Chastity</a>
+          <ul class="contact-methods">
+            <li>
+              <span>Email</span>
+              <a href="mailto:mld@chastitybirdsongllc.com">mld@chastitybirdsongllc.com</a>
+            </li>
+            <li>
+              <span>Call or text</span>
+              <a href="tel:+17203061779">720-306-1779</a>
+            </li>
+            <li>
+              <span>Book online</span>
+              <a href="https://chastitybirdsongllc.noterro.com/" target="_blank" rel="noopener" data-noterro-booking>Booking portal</a>
+            </li>
+          </ul>
+        </div>
+        <div class="brand-panel">
+          <img src="assets/logo-large.png" width="812" height="760" loading="lazy" decoding="async"
+               alt="Chastity Birdsong Concierge Nursing — watercolor ginkgo leaf logo" />
         </div>
       </div>
     </section>
