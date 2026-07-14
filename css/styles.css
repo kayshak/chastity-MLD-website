@@ -800,29 +800,6 @@ p {
   color: var(--color-taupe);
 }
 
-/* Embedded third-party form (e.g. Noterro referral form) */
-.form-embed {
-  margin-top: var(--space-lg);
-  border-radius: var(--radius);
-  border: 1px solid rgba(144, 143, 135, 0.25);
-  overflow: hidden;
-  background: var(--color-white);
-  box-shadow: 0 30px 60px -45px rgba(47, 79, 79, 0.5);
-}
-
-.form-embed iframe {
-  display: block;
-  width: 100%;
-  height: 1080px;
-  border: 0;
-}
-
-@media (max-width: 640px) {
-  .form-embed iframe {
-    height: 1320px;
-  }
-}
-
 /* ------------------------- Contact detail panel ------------------------ */
 .contact-detail__cta {
   margin-top: var(--space-md);
