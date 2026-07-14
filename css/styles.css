@@ -219,6 +219,9 @@ p {
 }
 
 .brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
   font-family: var(--font-serif);
   font-size: 1.4rem;
   font-weight: 500;
@@ -226,6 +229,16 @@ p {
   letter-spacing: 0.02em;
   line-height: 1.1;
   white-space: nowrap;
+}
+
+.brand__mark {
+  height: 2.7rem;
+  width: auto;
+  flex: none;
+}
+
+.brand__text {
+  display: block;
 }
 
 .brand small {
@@ -479,6 +492,23 @@ p {
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--color-slate);
+}
+
+/* Real photography in the same layout slots as .img-placeholder */
+.media-photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  border: 1px solid rgba(144, 143, 135, 0.25);
+  box-shadow: 0 30px 60px -45px rgba(47, 79, 79, 0.5);
+}
+
+/* Two (or more) stacked photos sharing one layout slot */
+.media-stack {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1rem, 2vw, 1.6rem);
 }
 
 /* ------------------------ Page intro / banners ------------------------- */
@@ -966,6 +996,11 @@ p {
 
   .brand {
     font-size: 1rem;
+    gap: 0.4rem;
+  }
+
+  .brand__mark {
+    height: 2rem;
   }
 
   .nav-actions .btn {
