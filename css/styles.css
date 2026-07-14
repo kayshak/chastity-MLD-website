@@ -800,6 +800,40 @@ p {
   color: var(--color-taupe);
 }
 
+/* ------------------------- Contact detail panel ------------------------ */
+.contact-detail__cta {
+  margin-top: var(--space-md);
+}
+
+.contact-methods {
+  list-style: none;
+  margin-top: var(--space-lg);
+  border-top: 1px solid rgba(144, 143, 135, 0.25);
+}
+
+.contact-methods li {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1.2rem;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid rgba(144, 143, 135, 0.25);
+}
+
+.contact-methods li > span {
+  flex: none;
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-slate);
+}
+
+.contact-methods li > a {
+  text-align: right;
+  word-break: break-word;
+}
+
 /* ----------------------------- Footer ---------------------------------- */
 .site-footer {
   background: var(--color-dark-slate);
